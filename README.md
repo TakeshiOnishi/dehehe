@@ -30,3 +30,7 @@
 ## Author
 
 [TakeshiOnishi](https://github.com/TakeshiOnishi)
+
+## License
+
+[BSD-3](https://github.com/TakeshiOnishi/dehehe/blob/master/LICENSE)
