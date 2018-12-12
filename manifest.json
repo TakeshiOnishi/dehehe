@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "version": "1.0",
+  "name": "DeHeHe",
+  "description": "画面が暗くなる → 笑顔を向ける → 画面が明るくなる → 強制笑顔 → HAPPY?",
+  "icons": {
+    "48": "images/logo_48.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "images/logo_19.png"
+    },
+    "default_title": "DeHeHe"
+  },
+  "content_scripts": [{
+    "matches": [
+      "https://s3-ap-northeast-1.amazonaws.com/emotion-model/*",
+      "https://*.google.co.jp/search*",
+      "https://*.google.com/search*"
+    ], 
+    "js": [
+    "./js/jquery.min.js",
+    "./js/tracking/build/tracking-min.js",
+    "./js/tracking/build/data/face-min.js",
+    "./js/tracking/src/alignment/training/Landmarks.js",
+    "./js/tracking/src/alignment/training/Regressor.js",
+    "./js/tf.min.js",
+    "./js/application.js"
+    ]
+  }]
+}
