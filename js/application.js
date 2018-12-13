@@ -79,7 +79,7 @@ function initTracker() {
 };
 
 // トラッキング状態監視
-function startTracking(){
+async function startTracking(){
   tracker.on('track', function(event) {
     if(!event.data) return;
     event.data.forEach(function(rect) {
