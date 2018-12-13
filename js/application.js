@@ -19,39 +19,6 @@ $('body').append(`
  <video id="inputVideo" width="${videoWidth}" height="${videoHeight}" loop preload autoplay></video>
 <canvas id="inputVideoCanvas" width="${canvasSize}" height="${canvasSize}"></canvas>
 <div id="few_smile"><br /><br />笑顔がたりないよ！<br />頑張れ頑張れ！٩(•౪• ٩)</div>
-<style>
-#inputVideo{
-  position: fixed;
-  right: -${videoWidth}px"
-}
-#inputVideoCanvas{
-  z-index: 10000;
-  position: fixed;
-  top: 50px;
-  right: 20px;
-}
-.to_hidden{
-  z-index: -1 !important;
-  opacity: 0 !important;
-}
-.to_show{
-  z-index: 9999 !important;
-  opacity: 1 !important;
-}
-#few_smile{
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background: rgba(0, 0, 0, .7);
-  color: #FFF;
-  opacity: 0;
-  display: block;
-  top: 0%;
-  text-align: center;
-  position: fixed;
-  font-size: 4rem;
-}
-</style>
 `);
 
 // 学習済みモデルのロード

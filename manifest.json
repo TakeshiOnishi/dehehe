@@ -21,6 +21,9 @@
       "https://*.google.co.jp/search*",
       "https://*.google.com/search*"
     ], 
+    "css": [
+      "./css/style.css"
+    ],
     "js": [
     "./js/jquery.min.js",
     "./js/tracking/build/tracking-min.js",
