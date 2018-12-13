@@ -15,11 +15,11 @@ let probability = 1.0; //初期感情データセット
 let not_smile_counter = 0; //笑顔じゃない場合の連続数
 
 // html要素挿入
-$('body').append(`
+document.body.innerHTML += `
  <video id="inputVideo" width="${videoWidth}" height="${videoHeight}" loop preload autoplay></video>
 <canvas id="inputVideoCanvas" width="${canvasSize}" height="${canvasSize}"></canvas>
 <div id="few_smile"><br /><br />笑顔がたりないよ！<br />頑張れ頑張れ！٩(•౪• ٩)</div>
-`);
+`
 
 // 学習済みモデルのロード
 async function loadModel(){
@@ -47,9 +47,11 @@ async function startTracking(){
       predict(input_video_canvas_tensor);
       if(probability > 0.88) {
         not_smile_counter = 0
-        $('#few_smile').addClass('to_hidden').removeClass('to_show')
+        document.getElementById("few_smile").classList.add("to_hidden")
+        document.getElementById("few_smile").classList.remove("to_show")
       }else if(not_smile_counter++ > 4){
-        $('#few_smile').addClass('to_show').removeClass('to_hidden')
+        document.getElementById("few_smile").classList.add("to_show")
+        document.getElementById("few_smile").classList.remove("to_hidden")
       }
     });
   });

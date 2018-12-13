@@ -25,7 +25,6 @@
       "./css/style.css"
     ],
     "js": [
-    "./js/jquery.min.js",
     "./js/tracking/build/tracking-min.js",
     "./js/tracking/build/data/face-min.js",
     "./js/tracking/src/alignment/training/Landmarks.js",
