@@ -67,7 +67,7 @@ function initTracker() {
   tracker.setInitialScale(4);
   tracker.setStepSize(2);
   tracker.setEdgesDensity(0.1);
-  tracking.track('#inputVideo', tracker, { camera: true, fps: 10 });
+  tracking.track('#inputVideo', tracker, { camera: true, fps: 4 });
 };
 
 // トラッキング状態監視
