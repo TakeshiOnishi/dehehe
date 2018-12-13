@@ -12,6 +12,9 @@
     },
     "default_title": "DeHeHe"
   },
+  "web_accessible_resources": [
+    "trained_data/output/*"
+  ],
   "content_scripts": [{
     "matches": [
       "https://s3-ap-northeast-1.amazonaws.com/emotion-model/*",

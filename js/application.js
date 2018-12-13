@@ -52,13 +52,12 @@ $('body').append(`
 // videoComponent取得
 let video = $('#video').get(0);
 
-// 学習済みモデルをロードする
+// 学習済みモデルのロード
 async function loadModel(){
-  console.log("Model loading...");
-  model = await tf.loadModel(`https://s3-ap-northeast-1.amazonaws.com/emotion-model/model.json`);
-  console.log("Model loaded!!!");
+  console.log('[Dehehe]Model Loading...')
+  model = await tf.loadModel(chrome.extension.getURL('trained_data/output/model.json'))
+  console.log('[Dehehe]Model Loaded!!')
 };
-
 
 function openWebStream() {
   tracker.setInitialScale(4);
