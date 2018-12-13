@@ -33,18 +33,10 @@ $('body').append(`
 .to_hidden{
   z-index: -1 !important;
   opacity: 0 !important;
-  transition-property: all;
-  transition-duration: 50ms;
-  transition-delay: 0s;
-  transition-timing-function: ease;
 }
 .to_show{
   z-index: 9999 !important;
   opacity: 1 !important;
-  transition-property: all;
-  transition-duration: 50ms;
-  transition-delay: 0s;
-  transition-timing-function: ease;
 }
 #few_smile{
   width: 100%;
