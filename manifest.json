@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "version": "1.0",
+  "version": "1.1",
   "name": "DeHeHe",
   "description": "画面が暗くなる → 笑顔を向ける → 画面が明るくなる → 強制笑顔 → HAPPY?",
   "icons": {
