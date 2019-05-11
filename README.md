@@ -2,7 +2,7 @@
 
 - GoogleChromeのネタ拡張機能
 - 画面が暗くなる → 笑顔を向ける → 画面が明るくなる → 強制笑顔 → HAPPY?
-- FIXME: Entry-URL
+- [Qiita解説記事](https://qiita.com/water_resistant/items/ec2e91c5e4e221556c5f)
 
 ## Requirement
 
